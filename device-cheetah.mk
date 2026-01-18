@@ -36,6 +36,11 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGP4BC \
     SystemUIGoogleOverlayVendorCheetah
 
+# Disable Settings large-screen optimization enabled by Window Extensions
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.settings.large_screen_opt.enabled=false
+
+
 PRODUCT_PACKAGES += \
     ApertureOverlayCheetah
 

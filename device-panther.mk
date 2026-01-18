@@ -14,6 +14,10 @@ TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
 # Inherit from gs201
 include device/google/gs201/common.mk
 
+# Disable Settings large-screen optimization enabled by Window Extensions
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.settings.large_screen_opt.enabled=false
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayProductPantah \
